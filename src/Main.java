@@ -1,5 +1,16 @@
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+        Runnable anonym = () -> {
+        };
+
+        String str = anonym.getClass().toString();
+        System.out.println(str);
+    }
+}
+
+
+
+    /*public static void main(String args[]) {
         BinarySearch binarySearch = new BinarySearch();
         int array[] = {6, 9, 14, 44, 55, 88, 100, 250};
         int lengthOfArray = array.length;
@@ -10,5 +21,4 @@ public class Main {
         } else {
             System.out.println("The item was found and has an index " + result);
         }
-    }
-}
+    }*/
